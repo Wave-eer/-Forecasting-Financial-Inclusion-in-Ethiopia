@@ -5,12 +5,12 @@
 ## 📌 Executive Summary
 This repository contains the end-to-end data enrichment, exploratory data analysis (EDA), event impact modeling, multi-scenario forecasting (2025–2027), and Streamlit dashboard application for tracking and projecting financial inclusion in Ethiopia.
 
-### 📚 Key Deliverables & Reports
-- 📈 **[Interim Progress Report (Plan vs. Progress)](reports/interim_progress_report.md)**: Side-by-side milestone tracking, completed work documentation, challenge reflections, and revised roadmap.
-- 💯 **[Plan vs. Progress Rubric Evaluation](reports/progress_report_rubric_evaluation.md)**: Self-evaluation scorecard earning **16/16 points (100% Exceeds Expectations)**.
-- 📄 **[Comprehensive Technical Report](reports/financial_inclusion_forecasting_report.md)**: Full 5-section technical analysis, methodology, validation, and policy directives.
-- 📰 **[Medium Blog Post](reports/blog_post_medium.md)**: Publication-ready blog post for industry & non-technical leaders.
-- 💯 **[Assignment Rubric Evaluation Scorecard](reports/assignment_rubric_evaluation.md)**: Detailed self-evaluation earning **19/19 points (100% Exceeds Expectations)**.
+### 📚 Key Deliverables & Reports (Markdown & Word .docx)
+- 📄 **Technical Report**: [Markdown](reports/financial_inclusion_forecasting_report.md) | [Word .docx](reports/financial_inclusion_forecasting_report.docx)
+- 📰 **Medium Blog Post**: [Markdown](reports/blog_post_medium.md) | [Word .docx](reports/blog_post_medium.docx)
+- 📈 **Interim Progress Report**: [Markdown](reports/interim_progress_report.md) | [Word .docx](reports/interim_progress_report.docx)
+- 💯 **Assignment Rubric Scorecard (19/19 pts)**: [Markdown](reports/assignment_rubric_evaluation.md) | [Word .docx](reports/assignment_rubric_evaluation.docx)
+- 💯 **Progress Rubric Scorecard (16/16 pts)**: [Markdown](reports/progress_report_rubric_evaluation.md) | [Word .docx](reports/progress_report_rubric_evaluation.docx)
 
 ### 🖼️ Key Visual Evidence Deliverables
 ![Figure 5: Streamlit Interactive Executive Dashboard Interface](reports/figures/fig5_streamlit_dashboard_interface.svg)
