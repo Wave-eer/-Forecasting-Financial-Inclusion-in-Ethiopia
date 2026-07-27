@@ -12,6 +12,10 @@ This repository contains the end-to-end data enrichment, exploratory data analys
 - 📰 **[Medium Blog Post](reports/blog_post_medium.md)**: Publication-ready blog post for industry & non-technical leaders.
 - 💯 **[Assignment Rubric Evaluation Scorecard](reports/assignment_rubric_evaluation.md)**: Detailed self-evaluation earning **19/19 points (100% Exceeds Expectations)**.
 
+### 🖼️ Key Visual Evidence Deliverables
+![Figure 5: Streamlit Interactive Executive Dashboard Interface](reports/figures/fig5_streamlit_dashboard_interface.svg)
+![Figure 3: SHAP Feature Importance & Impact Attribution Matrix](reports/figures/fig3_shap_explainability_matrix.svg)
+
 ---
 
 ## 🛠️ Project Structure

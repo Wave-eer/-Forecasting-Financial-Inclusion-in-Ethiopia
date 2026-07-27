@@ -76,8 +76,10 @@ Each completed task provides tangible portfolio value for financial sector stake
 ---
 
 ### 3.2 Task 3: Event Impact Modeling & Association Matrix
-- **Description**: Built the `EventImpactModel` class in [`src/impact_model.py`](file:///home/arsema/.gemini/antigravity/scratch/repo/src/impact_model.py) to calculate lagged sigmoidal adoption curves and validate predictions against empirical Findex milestones.
+- **Description**: Built the `EventImpactModel` class in [`src/impact_model.py`](file:///home/arsema/.gemini/antigravity/scratch/repo/src/impact_model.py) to calculate lagged sigmoidal adoption curves, generate SHAP-style impact attribution matrices, and validate predictions against empirical Findex milestones.
 - **Evidence of Completion**:
+
+![Figure 3: SHAP Feature Importance & Impact Attribution Matrix](figures/fig3_shap_explainability_matrix.svg)
 
 ```python
 # Code Snippet: Sigmoidal Lagged Impact Calculation (src/impact_model.py)
@@ -118,6 +120,8 @@ def calculate_lagged_impact(self, impact_magnitude: float, lag_months: float,
 ### 3.4 Task 5: 5-Section Interactive Streamlit Dashboard
 - **Description**: Developed a full-featured web interface ([`app/main.py`](file:///home/arsema/.gemini/antigravity/scratch/repo/app/main.py)) featuring Overview KPI cards, Historical Trends, Event Impact Matrices, Scenario Simulation Sliders, and Target Progress Trackers.
 - **Evidence of Completion**:
+
+![Figure 5: Streamlit Interactive Executive Dashboard Interface](figures/fig5_streamlit_dashboard_interface.svg)
 
 ```bash
 # Launch command verified locally
