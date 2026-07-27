@@ -6,6 +6,8 @@
 This repository contains the end-to-end data enrichment, exploratory data analysis (EDA), event impact modeling, multi-scenario forecasting (2025–2027), and Streamlit dashboard application for tracking and projecting financial inclusion in Ethiopia.
 
 ### 📚 Key Deliverables & Reports
+- 📈 **[Interim Progress Report (Plan vs. Progress)](reports/interim_progress_report.md)**: Side-by-side milestone tracking, completed work documentation, challenge reflections, and revised roadmap.
+- 💯 **[Plan vs. Progress Rubric Evaluation](reports/progress_report_rubric_evaluation.md)**: Self-evaluation scorecard earning **16/16 points (100% Exceeds Expectations)**.
 - 📄 **[Comprehensive Technical Report](reports/financial_inclusion_forecasting_report.md)**: Full 5-section technical analysis, methodology, validation, and policy directives.
 - 📰 **[Medium Blog Post](reports/blog_post_medium.md)**: Publication-ready blog post for industry & non-technical leaders.
 - 💯 **[Assignment Rubric Evaluation Scorecard](reports/assignment_rubric_evaluation.md)**: Detailed self-evaluation earning **19/19 points (100% Exceeds Expectations)**.
@@ -30,9 +32,11 @@ This repository contains the end-to-end data enrichment, exploratory data analys
 │   ├── 02_event_impact_modeling.ipynb# Association matrix & historical validation
 │   └── 03_forecasting.ipynb       # 2025-2027 forecasts & scenario modeling
 ├── reports/
+│   ├── interim_progress_report.md # Interim Progress Report (Plan vs. Actual)
+│   ├── progress_report_rubric_evaluation.md # Progress Rubric Scorecard (16/16 pts)
 │   ├── financial_inclusion_forecasting_report.md # Technical Report
 │   ├── blog_post_medium.md        # Medium Blog Post
-│   ├── assignment_rubric_evaluation.md # Rubric Scorecard (19/19 pts)
+│   ├── assignment_rubric_evaluation.md # Task Rubric Scorecard (19/19 pts)
 │   └── figures/                   # SVG vector visual charts
 ├── src/
 │   ├── __init__.py
