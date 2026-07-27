@@ -59,6 +59,8 @@ We refactored our data model into three decoupled entities:
 2. `event`: Exogenous policy directives, market entries, or infrastructure launches.
 3. `impact_link`: Direct directional connections mapping an `event` to an `observation` indicator with specified magnitude and lag.
 
+![Figure 6: Unified Schema Architecture](figures/fig6_unified_schema_architecture.svg)
+
 ```python
 # Sample Impact Link Structure in Python
 impact_link = {
@@ -73,12 +75,16 @@ impact_link = {
 }
 ```
 
-### 2.3 Event-Augmented Sigmoidal Forecaster
+### 2.3 Event-Augmented Sigmoidal Forecaster & SHAP Explainability
 Traditional linear regression fails when predicting policy adoption because human technology adoption follows an **S-curve**. We modeled event impact lag using a sigmoidal transfer function:
 
 $$I(t) = \frac{M}{1 + e^{-k(t/L - 0.5)}}$$
 
 Where $M$ is estimated impact magnitude, $L$ is full adoption lag in months, and $k$ controls adoption steepness.
+
+To ensure transparency for policy makers, our system outputs **SHAP-style Feature Importance & Impact Attribution Matrices**:
+
+![Figure 3: SHAP Feature Importance & Impact Attribution Matrix](figures/fig3_shap_explainability_matrix.svg)
 
 ---
 
@@ -98,7 +104,7 @@ We validated our event impact engine against empirical Global Findex data for th
 
 ### Finding 3: 2025–2027 Projections & The 70% Target Gap
 
-![Figure 3: Forecast Scenarios 2025-2027](figures/fig4_forecasts_2025_2027.svg)
+![Figure 4: Forecast Scenarios 2025-2027](figures/fig4_forecasts_2025_2027.svg)
 
 | Scenario | 2024 | 2025 Forecast | 2026 Forecast | 2027 Forecast | 95% Confidence Interval | NFIS-II Target Gap |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -108,7 +114,7 @@ We validated our event impact engine against empirical Global Findex data for th
 
 ---
 
-## 4. Engineering Improvements & Production Readiness
+## 4. Engineering Improvements & Production Dashboard
 
 Over the course of development, our team instituted key software engineering best practices:
 
@@ -116,6 +122,8 @@ Over the course of development, our team instituted key software engineering bes
 2. **Automated Unit Testing**: Built 9 comprehensive unit tests achieving 100% test pass rate across data loading, matrix building, validation, and forecast generation.
 3. **CI/CD Integration**: Configured GitHub Actions (`.github/workflows/unittests.yml`) to automatically execute unit tests on every pull request.
 4. **Interactive Executive Dashboard**: Developed a 5-tab Streamlit dashboard enabling real-time scenario simulation and parameter adjusting.
+
+![Figure 5: Streamlit Interactive Executive Dashboard Interface](figures/fig5_streamlit_dashboard_interface.svg)
 
 ```bash
 # Execute local test suite

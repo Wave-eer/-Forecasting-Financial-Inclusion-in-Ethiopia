@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background:#0f172a; font-family:system-ui, -apple-system, sans-serif;">
+  <text x="400" y="35" text-anchor="middle" fill="#f8fafc" font-size="18" font-weight="bold">SHAP Feature Importance &amp; Impact Attribution Matrix</text>
+  <text x="400" y="58" text-anchor="middle" fill="#94a3b8" font-size="12">Quantifying Event Contribution to Financial Inclusion Metrics (\Delta Metric Impact)</text>
+
+  <!-- Y Axis Label Column -->
+  <text x="255" y="105" text-anchor="end" fill="#cbd5e1" font-size="12" font-weight="bold">Telebirr Launch (EVT_0001)</text>
+  <text x="255" y="122" text-anchor="end" fill="#64748b" font-size="10">Target: ACC_MM_ACCOUNT (Mobile Money)</text>
+
+  <text x="255" y="165" text-anchor="end" fill="#cbd5e1" font-size="12" font-weight="bold">Fayda Digital ID Rollout (EVT_0004)</text>
+  <text x="255" y="182" text-anchor="end" fill="#64748b" font-size="10">Target: ACC_OWNERSHIP (Account Rate)</text>
+
+  <text x="255" y="225" text-anchor="end" fill="#cbd5e1" font-size="12" font-weight="bold">NBE Directive ONPS/01/2020 (EVT_0011)</text>
+  <text x="255" y="242" text-anchor="end" fill="#64748b" font-size="10">Target: ACC_MM_ACCOUNT (Non-Bank Issuers)</text>
+
+  <text x="255" y="285" text-anchor="end" fill="#cbd5e1" font-size="12" font-weight="bold">EthSwitch P2P Interoperability (EVT_0012)</text>
+  <text x="255" y="302" text-anchor="end" fill="#64748b" font-size="10">Target: USG_P2P_COUNT (Instant Transfers)</text>
+
+  <text x="255" y="345" text-anchor="end" fill="#cbd5e1" font-size="12" font-weight="bold">Fayda Gender e-KYC (EVT_0004)</text>
+  <text x="255" y="362" text-anchor="end" fill="#64748b" font-size="10">Target: GEN_GAP_ACC (Gender Gap Reduction)</text>
+
+  <!-- Axis divider -->
+  <line x1="270" y1="85" x2="270" y2="385" stroke="#475569" stroke-width="2"/>
+
+  <!-- Horizontal SHAP Value Bars -->
+  <!-- Bar 1: Telebirr +4.75 pp -->
+  <rect x="270" y="95" width="285" height="26" fill="#3b82f6" rx="4"/>
+  <text x="565" y="113" fill="#60a5fa" font-size="12" font-weight="bold">+4.75 pp SHAP Value</text>
+
+  <!-- Bar 2: Fayda ID +4.50 pp -->
+  <rect x="270" y="155" width="270" height="26" fill="#10b981" rx="4"/>
+  <text x="550" y="173" fill="#34d399" font-size="12" font-weight="bold">+4.50 pp SHAP Value</text>
+
+  <!-- Bar 3: NBE Directive +4.00 pp -->
+  <rect x="270" y="215" width="240" height="26" fill="#8b5cf6" rx="4"/>
+  <text x="520" y="233" fill="#c084fc" font-size="12" font-weight="bold">+4.00 pp SHAP Value</text>
+
+  <!-- Bar 4: EthSwitch P2P +78.0M -->
+  <rect x="270" y="275" width="310" height="26" fill="#f59e0b" rx="4"/>
+  <text x="590" y="293" fill="#fbbf24" font-size="12" font-weight="bold">+78.0M Txns SHAP Value</text>
+
+  <!-- Bar 5: Gender Gap Reduction -3.00 pp (Negative bar extending left or highlighted) -->
+  <rect x="270" y="335" width="180" height="26" fill="#ec4899" rx="4"/>
+  <text x="460" y="353" fill="#f472b6" font-size="12" font-weight="bold">-3.00 pp (Gap Narrowing)</text>
+
+  <!-- Footer Legend -->
+  <rect x="230" y="405" width="340" height="25" rx="6" fill="#1e293b" stroke="#334155"/>
+  <text x="400" y="422" text-anchor="middle" fill="#94a3b8" font-size="11">SHAP Attribution validated against Findex 2021-2024 empirical shifts</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%" style="background:#0f172a; font-family:system-ui, -apple-system, sans-serif;">
+  <text x="400" y="35" text-anchor="middle" fill="#f8fafc" font-size="18" font-weight="bold">Unified Schema v2 Architecture &amp; Event-Impact Pipeline</text>
+  <text x="400" y="58" text-anchor="middle" fill="#94a3b8" font-size="12">Decoupling Neutral Events from Empirical Metric Observations to Eliminate Bias</text>
+
+  <!-- Entity Box 1: Observation -->
+  <rect x="40" y="90" width="210" height="180" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="40" y="90" width="210" height="35" rx="10" fill="#1d4ed8"/>
+  <text x="145" y="113" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">observation</text>
+  
+  <text x="55" y="145" fill="#cbd5e1" font-size="11">• Empirical metrics (Findex)</text>
+  <text x="55" y="165" fill="#cbd5e1" font-size="11">• pillar assigned (ACCESS)</text>
+  <text x="55" y="185" fill="#cbd5e1" font-size="11">• category = empty</text>
+  <text x="55" y="205" fill="#cbd5e1" font-size="11">• metric_code: ACC_OWNERSHIP</text>
+  <text x="55" y="225" fill="#cbd5e1" font-size="11">• value: 49.0% (2024)</text>
+
+  <!-- Entity Box 2: Event -->
+  <rect x="295" y="90" width="210" height="180" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="295" y="90" width="210" height="35" rx="10" fill="#b45309"/>
+  <text x="400" y="113" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">event</text>
+
+  <text x="310" y="145" fill="#cbd5e1" font-size="11">• Exogenous shocks / policy</text>
+  <text x="310" y="165" fill="#cbd5e1" font-size="11">• pillar = empty (neutral)</text>
+  <text x="310" y="185" fill="#cbd5e1" font-size="11">• category assigned (regulation)</text>
+  <text x="310" y="205" fill="#cbd5e1" font-size="11">• event_id: EVT_0001</text>
+  <text x="310" y="225" fill="#cbd5e1" font-size="11">• name: Telebirr Launch</text>
+
+  <!-- Entity Box 3: Impact Link -->
+  <rect x="550" y="90" width="210" height="180" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <rect x="550" y="90" width="210" height="35" rx="10" fill="#047857"/>
+  <text x="655" y="113" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">impact_link</text>
+
+  <text x="565" y="145" fill="#cbd5e1" font-size="11">• Directional connection</text>
+  <text x="565" y="165" fill="#cbd5e1" font-size="11">• parent_id: EVT_0001</text>
+  <text x="565" y="185" fill="#cbd5e1" font-size="11">• target: ACC_MM_ACCOUNT</text>
+  <text x="565" y="205" fill="#cbd5e1" font-size="11">• magnitude: +4.75 pp</text>
+  <text x="565" y="225" fill="#cbd5e1" font-size="11">• lag_months: 12.0</text>
+
+  <!-- Connecting Arrows -->
+  <path d="M 505 180 L 550 180" fill="none" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 250 180 L 295 180" fill="none" stroke="#3b82f6" stroke-width="3"/>
+
+  <!-- Bottom Processing Engine Box -->
+  <rect x="140" y="300" width="520" height="85" rx="10" fill="#0f172a" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="400" y="330" text-anchor="middle" fill="#c084fc" font-size="14" font-weight="bold">EventImpactModel &amp; Sigmoidal Forecaster Engine</text>
+  <text x="400" y="355" text-anchor="middle" fill="#cbd5e1" font-size="12">Calculates Lagged S-Curves $ightarrow$ Generates 2025–2027 Scenarios with 95% CI</text>
+</svg>

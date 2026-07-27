@@ -67,6 +67,8 @@ To solve this, we implemented the **Ethiopia Financial Inclusion Unified Schema 
 - **`event`**: Represents neutral exogenous events (`category` assigned like `product_launch` or `policy`, `pillar` empty).
 - **`impact_link`**: Connects an event (`parent_id`) to an affected indicator (`related_indicator`), capturing `pillar`, `impact_direction`, `impact_magnitude`, `impact_estimate`, and `lag_months`.
 
+![Figure 6: Unified Schema Architecture](figures/fig6_unified_schema_architecture.svg)
+
 ```csv
 # Schema Architecture Example
 REC_0003,observation,,ACCESS,Account Ownership Rate,ACC_OWNERSHIP,higher_better,46.0,%,2021.0,...
@@ -121,7 +123,9 @@ Fayda Digital ID enrollment reached **15.0 million citizens** by mid-2025. Early
 
 ### 2.3 Event Impact Modeling & Historical Validation
 
-To quantify event effects, the `EventImpactModel` class maps parent events to child indicator metrics, forming an **Event-Indicator Association Matrix**:
+To quantify event effects and feature importance, the `EventImpactModel` class maps parent events to child indicator metrics, forming an **Event-Indicator Association Matrix** and calculating SHAP-style impact attributions:
+
+![Figure 3: SHAP Feature Importance & Impact Attribution Matrix](figures/fig3_shap_explainability_matrix.svg)
 
 | Event ID | Event Name | Category | Target Indicator | Pillar | Impact Direction | Impact Estimate | Lag (Months) | Evidence Basis |
 | :--- | :--- | :--- | :--- | :--- | :---: | :---: | :---: | :--- |
@@ -175,6 +179,8 @@ $$I(t) = \frac{M}{1 + e^{-k(t/L - 0.5)}}$$
 ### 2.5 Dashboard Application Architecture (`app/main.py`)
 
 The interactive Streamlit dashboard provides a real-time analytics suite for consortium executives:
+
+![Figure 5: Streamlit Interactive Executive Dashboard Interface](figures/fig5_streamlit_dashboard_interface.svg)
 
 ```mermaid
 graph TD
