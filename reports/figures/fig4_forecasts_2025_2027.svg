@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background:#0f172a; font-family:system-ui, -apple-system, sans-serif;">
+  <text x="400" y="40" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="bold">Ethiopia Account Ownership Forecasts (2025–2027)</text>
+  <text x="400" y="65" text-anchor="middle" fill="#94a3b8" font-size="13">Multi-Scenario Projections &amp; Progress Toward NFIS-II Targets</text>
+
+  <!-- Target Line (60% / 70%) -->
+  <line x1="100" y1="130" x2="720" y2="130" stroke="#a855f7" stroke-width="2" stroke-dasharray="6"/>
+  <text x="730" y="135" fill="#c084fc" font-size="12" font-weight="bold">60% NFIS Goal</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="360" x2="720" y2="360" stroke="#334155" stroke-width="2"/>
+  <line x1="100" y1="100" x2="100" y2="360" stroke="#334155" stroke-width="2"/>
+
+  <!-- Y Labels -->
+  <text x="85" y="365" text-anchor="end" fill="#64748b" font-size="12">45%</text>
+  <text x="85" y="285" text-anchor="end" fill="#64748b" font-size="12">50%</text>
+  <text x="85" y="205" text-anchor="end" fill="#64748b" font-size="12">55%</text>
+  <text x="85" y="125" text-anchor="end" fill="#64748b" font-size="12">60%</text>
+
+  <!-- Plot Points -->
+  <!-- 2024: (140, 296) = 49% -->
+  <!-- 2025: Opt (330, 241) = 52.4%, Base (330, 267) = 50.8%, Pess (330, 288) = 49.5% -->
+  <!-- 2026: Opt (520, 198) = 55.1%, Base (520, 244) = 52.2%, Pess (520, 280) = 50.0% -->
+  <!-- 2027: Opt (700, 148) = 58.2%, Base (700, 224) = 53.5%, Pess (700, 272) = 50.5% -->
+
+  <!-- Optimistic -->
+  <polyline points="140,296 330,241 520,198 700,148" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="4"/>
+  <!-- Base -->
+  <polyline points="140,296 330,267 520,244 700,224" fill="none" stroke="#3b82f6" stroke-width="4"/>
+  <!-- Pessimistic -->
+  <polyline points="140,296 330,288 520,280 700,272" fill="none" stroke="#ef4444" stroke-width="3" stroke-dasharray="2"/>
+
+  <!-- Points & Values -->
+  <!-- 2024 -->
+  <circle cx="140" cy="296" r="6" fill="#3b82f6"/>
+  <text x="140" y="316" text-anchor="middle" fill="#cbd5e1" font-size="12">49.0% (2024)</text>
+
+  <!-- 2027 Points -->
+  <circle cx="700" cy="148" r="6" fill="#22c55e"/>
+  <text x="700" y="138" text-anchor="middle" fill="#4ade80" font-size="13" font-weight="bold">58.2% (Opt)</text>
+
+  <circle cx="700" cy="224" r="7" fill="#3b82f6"/>
+  <text x="700" y="214" text-anchor="middle" fill="#60a5fa" font-size="14" font-weight="bold">53.5% (Base)</text>
+
+  <circle cx="700" cy="272" r="6" fill="#ef4444"/>
+  <text x="700" y="292" text-anchor="middle" fill="#fca5a5" font-size="13" font-weight="bold">50.5% (Pess)</text>
+
+  <!-- X Labels -->
+  <text x="330" y="385" text-anchor="middle" fill="#94a3b8" font-size="12">2025</text>
+  <text x="520" y="385" text-anchor="middle" fill="#94a3b8" font-size="12">2026</text>
+  <text x="700" y="385" text-anchor="middle" fill="#94a3b8" font-size="12">2027</text>
+
+  <!-- Legend -->
+  <rect x="140" y="90" width="400" height="30" rx="6" fill="#1e293b" stroke="#334155"/>
+  <circle cx="160" cy="105" r="4" fill="#22c55e"/>
+  <text x="170" y="109" fill="#cbd5e1" font-size="11">Optimistic</text>
+
+  <circle cx="260" cy="105" r="4" fill="#3b82f6"/>
+  <text x="270" y="109" fill="#cbd5e1" font-size="11">Base</text>
+
+  <circle cx="340" cy="105" r="4" fill="#ef4444"/>
+  <text x="350" y="109" fill="#cbd5e1" font-size="11">Pessimistic</text>
+</svg>
